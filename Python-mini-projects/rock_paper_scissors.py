@@ -7,9 +7,9 @@ options = ["rock", "paper", "scissors"]
 
 while True:
     user_input = input("Type Rock/Paper/Scisssors or Q to quit: ").lower()
-    if user_input == q:
+    if user_input == "q":
         break
-
+    
     if user_input not in options:
         continue
     random_number = random.randint(0,2)
@@ -17,7 +17,16 @@ while True:
     computer_pick = options[random_number]
     print("Computer picked",computer_pick + ".")
 
-    if user_input == "rock" and computer_pick == "scissors":
+    if user_input == "rock" and computer_pick == "rock":
+        print("Tie happend!. Please Try again")
+        continue
+    elif user_input == "paper" and computer_pick == "paper":
+        print("Both choosed paper!. Please Try again")
+        continue
+    elif user_input == "scissors" and computer_pick == "scissors":
+        print("Tie happend!. Please Try again")
+        continue
+    elif user_input == "rock" and computer_pick == "scissors":
         print("You won!")
         user_wins += 1
     elif user_input == "paper" and computer_pick == "rock":
@@ -29,4 +38,7 @@ while True:
     else:
         print("You lost!")
         computer_wins += 1
+
+print(f"You won {user_wins} times")
+print(f"The computer won {computer_wins} times")
 print("Goodbye!")
