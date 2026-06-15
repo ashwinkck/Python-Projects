@@ -15,6 +15,7 @@ if answer == "left":
         print("Type any one of the options")
 
 elif answer == "right":
+    answer = input("You come to a bridge, it looks wobbly, do you want to cross it or head back? ")
     print()
 else:
     print("Not a valid answer bro! You loose like always!!")
