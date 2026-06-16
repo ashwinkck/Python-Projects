@@ -1,5 +1,10 @@
 pwd = input("what is the master password? ")
 
+def view():
+    pass
+
+def add():
+    pass
 
 
 while True:
