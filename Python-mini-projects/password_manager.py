@@ -12,7 +12,7 @@ def load_key():
     return key
 
 master_pwd = input("what is the master password? ")
-key = load_key() + master_pwd.bytes
+key = load_key() + master_pwd.encode()
 fer = Fernet(key)
 
 
@@ -30,7 +30,7 @@ def add():
     pwd = input("password: ")
 
     with open('passwords.txt', 'a') as f:
-        f.write(name + "|" + pwd + "\n")
+        f.write(name + "|" + fer.encrypt(pwd.encode()) + "\n")
 
 
 while True:
