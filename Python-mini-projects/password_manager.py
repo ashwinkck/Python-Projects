@@ -46,5 +46,5 @@ while True:
     elif mode == "add":
         add()
     else:
-        print("Invalid mode.")
+        print("Invalid .")
         continue
