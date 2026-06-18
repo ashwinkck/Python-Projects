@@ -1,0 +1,11 @@
+Today, <person_name> went to the <place> to buy a <noun>.
+
+While walking, they saw a <adjective> <animal> that was <verb_ending_ing> near a <noun>.
+
+Suddenly, the animal said, "Give me your <noun>!"
+
+<person_name> was very <emotion>, so they decided to <verb> as fast as possible.
+
+After <number> minutes, they reached home and ate a <food>.
+
+It was the most <adjective> day ever!
