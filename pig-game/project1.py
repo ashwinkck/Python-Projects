@@ -8,5 +8,3 @@ def roll():
 
     return roll
 
-value = roll()
-print(value)
