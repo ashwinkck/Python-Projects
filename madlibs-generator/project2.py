@@ -16,3 +16,5 @@ for i, char in enumerate(story):
         word = story[start_of_word: i + 1]
         words.append(word)
         start_of_word = -1
+    
+    #projectq
