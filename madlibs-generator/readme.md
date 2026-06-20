@@ -1,4 +1,4 @@
-*** INPUT ***
+** INPUT **
 madlibs-generator/project2.py
 Enter a word for <animal> :dog
 Enter a word for <weather_condition> :sunny
@@ -12,7 +12,7 @@ Enter a word for <character> :mom
 Enter a word for <emotion2> :happy
 Enter a word for <adverb> :gently
 
-*** OUTPUT ***
+** OUTPUT **
 {'<animal>': 'dog', '<weather_condition>': 'sunny', '<place2>': 'school', '<adjective1>': 'throw', '<object>': 'watch', '<terrain>': 'sand', '<emotion>': 'sad', '<place>': 'house', '<character>': 'mom', '<emotion2>': 'happy', '<adverb>': 'gently'}
 In the throw land of house, a dog was feeling sad. The dog had lost its watch.
 
