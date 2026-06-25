@@ -33,6 +33,7 @@ def get_number_of_lines():
 
     return lines
 
+# Amount to bet on each line
 
 
 def main():
