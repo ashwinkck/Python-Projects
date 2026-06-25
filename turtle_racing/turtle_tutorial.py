@@ -1,6 +1,10 @@
 import turtle
 import time
+import random
+
 WIDTH, HEIGHT = 500, 500
+COLORS = ['red', 'green', 'blue', 'orange', 'yellow', 'black', 'purple', 'pink', 'brown', 'cyan']
+
 
 
 def get_number_of_racers():
@@ -24,29 +28,6 @@ def init_turtle():
 
 racers = get_number_of_racers()
 init_turtle()
-
-#Starting to move the turtle, with turtle object
-racer = turtle.Turtle()
-racer.speed(1)
-racer.penup()
-racer.shape('turtle')
-racer.color('green')
-racer.forward(100)
-racer.left(90)
-racer.pendown()
-racer.forward(100)
-racer.right(90)
-racer.backward(100)
-
-racer2 = turtle.Turtle()
-racer2.speed(2)
-racer2.penup()
-racer2.shape('turtle')
-racer2.color('red')
-racer2.forward(150)
-racer2.left(90)
-racer2.pendown()
-racer2.forward(150)
-racer2.right(90)
-racer2.backward(150)
-
+random.shuffle(COLORS)
+colors = COLORS[:racers]
+print(colors)
