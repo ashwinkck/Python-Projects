@@ -32,7 +32,7 @@ def race(colors):
 
             x, y = racer.pos()
             if y >= HEIGHT // 2 - 10:
-                return colors[turtles.index(turtle)]
+                return colors[turtles.index(racer)]
 
 
 def create_turtles(colors):
