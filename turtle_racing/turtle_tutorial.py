@@ -58,7 +58,7 @@ def display_winner(color):
 
     #Writes text on the screen
     writer.write(
-        f"The winner of this {color}!",
+        f"The winner of this racing game is {color}!",
         align="center",
         font=("Arial",20,"bold")
     )
