@@ -29,6 +29,12 @@ def race(colors):
             distance = random.randrange(1,20)
             racer.forward(distance)
 
+
+            x, y = racer.pos()
+            if y >= HEIGHT // 2 - 10:
+                return colors[turtles.index(turtle)]
+
+
 def create_turtles(colors):
     turtles = []
     spacingx = WIDTH // (len(colors) + 1)
