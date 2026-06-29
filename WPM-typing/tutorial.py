@@ -1,0 +1,1 @@
+import curses #helping with styling of the terminal
