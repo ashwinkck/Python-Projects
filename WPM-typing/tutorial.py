@@ -17,6 +17,14 @@ def wpm_test(stdscr):
     stdscr.refresh()
     stdscr.getkey()
 
+    while True:
+        key  = stdscr.getkey()
+        current_text.append(key)
+
+
+        for char in current_text:
+            stdscr.addstr(char, curses.color_pair(1))
+
 
 def main(stdscr):
     curses.init_pair(1, curses.COLOR_GREEN, curses.COLOR_BLACK) # adding styling with foreground green and background white with an id 1
