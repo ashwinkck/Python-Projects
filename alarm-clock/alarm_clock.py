@@ -4,10 +4,6 @@ import time
 CLEAR = "\033[2J" # To clear the terminal
 CLEAR_AND_RETURN = "\033[H" #will clear and do the maths in a single line
 
-minutes = int(input("How many minutes to wait: "))
-seconds = int(input("How many seconds to wait: "))
-ring = int(input("How many times do you want it to repeat it: "))
-total_seconds = minutes * 60 + seconds
 def alarm(t_seconds, ring_count):
     time_elapsed = 0
     
@@ -25,5 +21,8 @@ def alarm(t_seconds, ring_count):
     for _ in range(ring_count):
         playsound("alarm.mp3")
         time.sleep(1)
-
+minutes = int(input("How many minutes to wait: "))
+seconds = int(input("How many seconds to wait: "))
+ring = int(input("How many times do you want it to repeat it: "))
+total_seconds = minutes * 60 + seconds
 alarm(total_seconds, ring)
